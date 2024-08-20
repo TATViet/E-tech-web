@@ -42,6 +42,22 @@ app.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+// Example of product details route
+app.get('/productDetails', (req, res) => {
+    const productDetails = {
+        name: 'Apple iPhone 11, 64GB, Blue',
+        description: 'A powerful smartphone with a dual-camera system and a sleek design.',
+        price: 400,
+        features: [
+            '6.1-inch Liquid Retina HD display',
+            'A13 Bionic chip',
+            'Dual 12MP Ultra Wide and Wide cameras',
+            'Face ID for secure authentication'
+        ]
+    };
+    res.render('productDetails', { product: productDetails });
+});
+
 app.post('/signup', (req, res) => {
     const { username, email, password } = req.body;
     console.log('Username:', username);

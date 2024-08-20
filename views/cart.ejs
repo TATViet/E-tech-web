@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"> <!-- Added Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
 </head>
 <body>
+
+    <style>
+        p{
+           margin-left : 850px;
+
+        }
+    </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="/">DVtech</a>
@@ -29,6 +36,7 @@
                     <th scope="col">Price</th>
                     <th scope="col">Quantity</th>
                     <th scope="col">Total</th>
+                    <th scope="col"></th> <!-- New column for Delete button -->
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +51,9 @@
                                min="0">
                     </td>
                     <td>$800.00</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
